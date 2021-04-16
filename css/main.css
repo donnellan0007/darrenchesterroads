@@ -1,0 +1,88 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(/PATTERNdas.png);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Stardom', sans-serif
+}
+
+:not(h1) {
+    font-family: 'Amulya', sans-serif;
+}
+
+.container h1 {
+    font-size: 3rem;
+}
+
+.container .heading {
+    text-align: center;
+}
+
+.container .images .image-div {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-bottom: rgb(105, 105, 105) solid 1px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+blockquote {
+    border-left: 5px rebeccapurple solid;
+    padding: 5px;
+    background: rgba(102, 51, 153, 0.068);
+    position: relative;
+}
+blockquote::before {
+    content: "❝";
+    position: absolute;
+    left: 0;
+    color: rgb(153, 51, 51);
+    top: -25px;
+    font-size: 3.25rem;
+}
+blockquote::after {
+    content: "❞";
+    position: absolute;
+    right: 0;
+    color: rgb(153, 51, 51);
+    top: 10px;
+    font-size: 3.25rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 500px;
+    }
+    .container h1 {
+        font-size: 2rem;
+    }
+    .container .heading {
+        text-align: left;
+    }
+    .container h2 {
+        font-size: 1rem;
+    }
+    .container .images .image-div, .container .images .image-div img {
+        width: 100% !important;
+        height: auto;
+        margin: 0 auto;
+    }
+    .container .images .image-div img {
+        text-align: center;
+    }
+}
+
+small {
+    padding: 2.5px;
+    background: rgba(255, 132, 132, 0.664);
+}
